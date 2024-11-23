@@ -164,6 +164,26 @@ void ReadingList::add(Book b)
 	books[i + 1] = b;
 }
 
+/**
+* Remove a book from the reading list. If a book with the same ID exists, it is
+* removed from the list. Otherwise the list is left unchanged.
+*
+* @param bid ID of a book to remove
+*
+* @post !contains(bid) 
+*/
+void ReadingList::remove(std::string bid)
+{
+	if (contains(bid)) {
+		int indexToRemove = find(bid);
+		for (int i = indexToRemove; i < size() - 1; i++) {
+        	books[i] = books[i + 1];
+    	}
+
+		reserve(size() - 1);
+	}
+}
+
 // Define operator==
 bool ReadingList::operator==(const ReadingList& other) const {
     // Compare sizes first
