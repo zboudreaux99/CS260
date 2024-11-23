@@ -1,0 +1,13 @@
+dueDate: 2024-12-06
+latePenalties: [10, 20, 100]
+test:
+  launch: ./lottery
+  timelimit: 10
+build:
+  instructorFiles:
+    exclude:
+      - lottery.cpp
+  studentFiles:
+    exclude:
+      - makefile
+  command: make -k
