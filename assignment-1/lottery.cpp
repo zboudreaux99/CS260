@@ -15,7 +15,7 @@ double factorial(int n) {
 void solve(int howManyNumbers, int numberSelected)
 {
     if (howManyNumbers <= 0 || numberSelected <= 0 || numberSelected > howManyNumbers) {
-        cout << "This is not a possible lottery" << endl;
+        cout << "This is not a possible lottery." << endl;
         return;
     } else {
         double probability = factorial(howManyNumbers) / (factorial(numberSelected) * factorial(howManyNumbers - numberSelected));
