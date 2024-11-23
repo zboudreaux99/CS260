@@ -1,0 +1,14 @@
+test:
+  timelimit: 10
+  launch: ./tally
+  params: '@T/albums.csv @T/requests.csv'
+  stderr: false
+dueDate: 12/06/2024
+latePenalties: [10, 20, 100]
+build:
+  command: make
+  weight: 1
+  studentFiles:
+    include: ["playlist.h", "playlist.cpp"]
+  instructorFiles:
+    exclude: ["playlist.h", "playlist.cpp"]

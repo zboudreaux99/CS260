@@ -1,0 +1,9 @@
+#!/bin/sh
+cat <<EOF > albums004.csv
+EOF
+cat <<EOF > requests004.csv
+"","The Great Gig In The Sky"
+"The Who",""
+"The Beatles","lucy in the sky with diamonds"
+EOF
+./cdcheck albums004.csv requests004.csv

@@ -1,0 +1,11 @@
+#!/bin/sh
+cat <<EOF > albums005.csv
+"David Bowie","David Bowie - Live on Mars",1,"Look Back In Anger","3:05"
+EOF
+cat <<EOF > requests005.csv
+"","The Great Gig In The Sky"
+"The Who",""
+"","look back in anger"
+"The Beatles","lucy in the sky with diamonds"
+EOF
+./cdcheck albums005.csv requests005.csv

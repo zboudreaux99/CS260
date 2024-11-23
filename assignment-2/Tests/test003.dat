@@ -1,0 +1,7 @@
+#!/bin/sh
+cat <<EOF > requests003.csv
+"Pink fflloyd",""
+"The Beatels",""
+"jethro tall",""
+EOF
+./cdcheck albums000.csv requests003.csv

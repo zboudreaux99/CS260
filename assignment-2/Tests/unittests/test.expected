@@ -1,0 +1,7 @@
+1..3
+# Warning: No matching test found for input specification /home/zeil/courses/cs260/f24/Assts/class_playlist/Grading/unittests/albums.csv
+# Warning: No matching test found for input specification /home/zeil/courses/cs260/f24/Assts/class_playlist/Grading/unittests/requests.csv
+ok 1 - Add1
+ok 2 - AddMulti
+ok 3 - Constructor
+# UnitTest: passed 3 out of 3 tests, for a success rate of 100.0%
