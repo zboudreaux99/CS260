@@ -19,7 +19,7 @@ void solve(int howManyNumbers, int numberSelected)
         return;
     } else {
         double probability = factorial(howManyNumbers) / (factorial(numberSelected) * factorial(howManyNumbers - numberSelected));
-        cout << "Your chances of winning are 1 in " << std::fixed << probability << endl;
+        cout << "Your chances of winning are 1 in " << std::fixed << std:setprecision(0) << probability << endl;
     }
 }
 
