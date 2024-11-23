@@ -160,8 +160,25 @@ void ReadingList::add(Book b)
         books[i + 1] = books[i]; // Shift books to the right to make space
         --i;
     }
-	
+
 	books[i + 1] = b;
+}
+
+// Define operator==
+bool ReadingList::operator==(const ReadingList& other) const {
+    // Compare sizes first
+    if (size() != other.size()) {
+        return false;
+    }
+
+    // Compare each book (assumes Book has operator== implemented)
+    for (size_t i = 0; i < size(); ++i) {
+        if (!(books[i] == other.books[i])) {
+            return false;
+        }
+    }
+
+    return true;
 }
 
 /**

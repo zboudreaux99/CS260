@@ -27,6 +27,8 @@ public:
 	 */
 	ReadingList (int maxCapacity = 100);
 
+	// Equality operator
+    bool operator==(const ReadingList& other) const;
 
 	/**
 	 * How many books currently in this reading list?
