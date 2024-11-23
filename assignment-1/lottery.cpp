@@ -20,6 +20,7 @@ void solve(int howManyNumbers, int numberSelected)
         return;
     } else {
         long long probability = factorial(howManyNumbers) / (factorial(numberSelected) * factorial(howManyNumbers - numberSelected));
+        cout << "howManyNumbers = " << howManyNumbers << ", numberSelected = " << numberSelected << endl;
         cout << "Your chances of winning are 1 in " << probability << endl;
     }
 }
