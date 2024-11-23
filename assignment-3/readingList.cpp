@@ -130,6 +130,41 @@ Book ReadingList::get(int i) const
 }
 
 /**
+* Add a book to the reading list. If a book with the same ID exists, it is
+* replaced by b. Books are kept in order by their IDs.
+* 
+* If there is no room to add another book, calls reserve(size()+1)
+* before adding.
+*
+* @param b A book to add
+*
+* @pre size() < capacity() || contains(b.getID())
+* @post contains(b.getID()) && b == get(b.getID())
+*/
+void ReadingList::add(Book b)
+{
+	std::string bookID = b.getID();
+
+	if (contains(bookID)) {
+		int index = find(bookID);
+		books[index] = b;
+		return;
+	}
+
+	if (size() >= capacity()) {
+		reserve(size() + 1);
+	}
+
+	int i = size() - 1;
+    while (i >= 0 && books[i].getID() > bookID) {
+        books[i + 1] = books[i]; // Shift books to the right to make space
+        --i;
+    }
+	
+	books[i + 1] = b;
+}
+
+/**
  * Read a reading list from the input stream, terminating at
  * end of stream or at a book with ID "**END**".
  *
