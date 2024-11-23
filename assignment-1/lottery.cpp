@@ -28,7 +28,7 @@ int main(int argc, char **argv)
     int howManyNumbers;
     int numberSelected;
 
-    cout << "How many numbers are printed on the lottery ticket?" << flush;
+    cout << "How many numbers are printed on the lottery ticket? " << flush;
     cin >> howManyNumbers;
     cout << "How many numbers are selected in the lottery drawing? " << flush;
     cin >> numberSelected;
