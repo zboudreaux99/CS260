@@ -3,8 +3,8 @@
 
 using namespace std;
 
-long factorial(int n) {
-    long result;
+long long factorial(int n) {
+    long long result = 1;
     for (int i = 2; i <= n; i++) {
         result *= i;
     }
@@ -19,8 +19,8 @@ void solve(int howManyNumbers, int numberSelected)
         cout << "This is not a possible lottery";
         return;
     } else {
-        long probability = factorial(howManyNumbers) / (factorial(numberSelected) * factorial(howManyNumbers - numberSelected));
-        cout << "Your chances of winning are 1 in " << probability;
+        long long probability = factorial(howManyNumbers) / (factorial(numberSelected) * factorial(howManyNumbers - numberSelected));
+        cout << "Your chances of winning are 1 in " << probability << endl;
     }
 }
 
