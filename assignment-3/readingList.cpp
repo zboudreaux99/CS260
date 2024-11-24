@@ -162,6 +162,7 @@ void ReadingList::add(Book b)
     }
 
 	books[i + 1] = b;
+	++theSize;
 }
 
 /**
@@ -180,7 +181,7 @@ void ReadingList::remove(std::string bid)
         	books[i] = books[i + 1];
     	}
 
-		reserve(size() - 1);
+		--theSize;
 	}
 }
 
