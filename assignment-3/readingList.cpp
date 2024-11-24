@@ -201,6 +201,32 @@ bool ReadingList::operator==(const ReadingList& other) const {
     return true;
 }
 
+ReadingList::~ReadingList() {
+    delete[] books; // Free the memory allocated for the books array
+}
+
+ReadingList::ReadingList(const ReadingList& other)
+    : theCapacity(other.theCapacity), theSize(other.theSize) {
+    books = new Book[theCapacity];
+    for (int i = 0; i < theSize; ++i) {
+        books[i] = other.books[i];
+    }
+}
+
+ReadingList& ReadingList::operator=(const ReadingList& other) {
+    if (this != &other) { // Prevent self-assignment
+        delete[] books; // Clean up current memory
+
+        theCapacity = other.theCapacity;
+        theSize = other.theSize;
+        books = new Book[theCapacity];
+        for (int i = 0; i < theSize; ++i) {
+            books[i] = other.books[i];
+        }
+    }
+    return *this;
+}
+
 /**
  * Read a reading list from the input stream, terminating at
  * end of stream or at a book with ID "**END**".

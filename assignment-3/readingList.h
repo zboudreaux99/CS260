@@ -29,6 +29,13 @@ public:
 
 	// Equality operator
     bool operator==(const ReadingList& other) const;
+	
+	// Destructor
+    ~ReadingList();
+
+    // Rule of Three
+    ReadingList(const ReadingList& other); // Copy constructor
+    ReadingList& operator=(const ReadingList& other); // Copy assignment operator
 
 	/**
 	 * How many books currently in this reading list?
