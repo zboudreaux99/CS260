@@ -1,0 +1,3 @@
+Output line 0:
+  <i>expected: </i>1..9 <span class='expected'>ok</span> 1 - testRLAddDiscrete ok 2 - testRLAddDuplicates ok 3 - testRLA
+  <i>observed: </i>1..9 <span class='observed'>testReadingList</span>.cpp:52: error: Failed test # testReadingList.cpp:52: rl.size() 

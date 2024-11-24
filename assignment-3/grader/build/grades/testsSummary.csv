@@ -1,0 +1,101 @@
+Test,Score,Weight,Msgs
+"builder: Attempt to build the program.",100,1,"make[1]: Entering directory '/home/cs_zboud002/CS260/assignment-3'
+cat book.d counted.d mergeLists.d readingList.d sanityCheck.d testReadingList.d unittest.d > make.dep
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cs_zboud002/CS260/assignment-3'
+
+--- end of output ---
+--- std error ---
+
+--------"
+"empty1",0,1,"Output line 0:
+  <i>expected: </i>emptyList.txt contained 0 books. mediumList2.txt contained <span class='expected'>1000</span> books. Their merge contains 1000 books. etext10026 Various The 
+  <i>observed: </i>emptyList.txt contained 0 books. mediumList2.txt contained <span class='observed'>0</span> books. Their merge contains 0 books. --- end of output ---"
+"empty1-mem",0,1,"Output line 0:
+  <i>expected: </i>empty.txt contained 0 books. mediumList2.txt contained <span class='expected'>1000</span> books. Their merge contains 1000 books. etext10026 Various The 
+  <i>observed: </i>empty.txt contained 0 books. mediumList2.txt contained <span class='observed'>0</span> books. Their merge contains 0 books. --- end of output --- ---"
+"empty2",0,1,"Output line 0:
+  <i>expected: </i>mediumList1.txt contained <span class='expected'>1000</span> books. emptyList.txt contained 0 books. Their merge contains 10
+  <i>observed: </i>mediumList1.txt contained <span class='observed'>0</span> books. emptyList.txt contained 0 books. Their merge contains 0"
+"empty2-mem",0,1,"Output line 0:
+  <i>expected: </i>mediumList1.txt contained <span class='expected'>1000</span> books. emptyList.txt contained 0 books. Their merge contains 10
+  <i>observed: </i>mediumList1.txt contained <span class='observed'>0</span> books. emptyList.txt contained 0 books. Their merge contains 0"
+"medium1",0,1,"Output line 0:
+  <i>expected: </i>mediumList1.txt contained <span class='expected'>1000</span> books. mediumList2.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList1.txt contained <span class='observed'>0</span> books. mediumList2.txt contained 0 books. Their merge contains"
+"medium1-mem",0,1,"Output line 0:
+  <i>expected: </i>mediumList1.txt contained <span class='expected'>1000</span> books. mediumList2.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList1.txt contained <span class='observed'>0</span> books. mediumList2.txt contained 0 books. Their merge contains"
+"medium2",0,1,"Output line 0:
+  <i>expected: </i>mediumList3.txt contained <span class='expected'>1000</span> books. mediumList1.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList3.txt contained <span class='observed'>0</span> books. mediumList1.txt contained 0 books. Their merge contains"
+"medium2-mem",0,1,"Output line 0:
+  <i>expected: </i>mediumList3.txt contained <span class='expected'>1000</span> books. mediumList1.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList3.txt contained <span class='observed'>0</span> books. mediumList1.txt contained 0 books. Their merge contains"
+"noNewEntries",0,1,"Output line 0:
+  <i>expected: </i>mediumList3.txt contained <span class='expected'>1000</span> books. mediumList2.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList3.txt contained <span class='observed'>0</span> books. mediumList2.txt contained 0 books. Their merge contains"
+"noNewEntries-mem",0,1,"Output line 0:
+  <i>expected: </i>mediumList3.txt contained <span class='expected'>1000</span> books. mediumList2.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList3.txt contained <span class='observed'>0</span> books. mediumList2.txt contained 0 books. Their merge contains"
+"short1",0,1,"Output line 0:
+  <i>expected: </i>shortList1.txt contained <span class='expected'>190</span> books. shortList2.txt contained 190 books. Their merge contains
+  <i>observed: </i>shortList1.txt contained <span class='observed'>0</span> books. shortList2.txt contained 0 books. Their merge contains 0"
+"short1-mem",0,1,"Output line 0:
+  <i>expected: </i>shortList1.txt contained <span class='expected'>190</span> books. shortList2.txt contained 190 books. Their merge contains
+  <i>observed: </i>shortList1.txt contained <span class='observed'>0</span> books. shortList2.txt contained 0 books. Their merge contains 0"
+"tiny1",0,1,"Output line 0:
+  <i>expected: </i>tinyList1.txt contained <span class='expected'>3</span> books. tinyList2.txt contained 3 books. Their merge contains 5 
+  <i>observed: </i>tinyList1.txt contained <span class='observed'>0</span> books. tinyList2.txt contained 0 books. Their merge contains 0"
+"tiny1-mem",0,1,"Output line 0:
+  <i>expected: </i>tinyList1.txt contained <span class='expected'>3</span> books. tinyList2.txt contained 3 books. Their merge contains 5 
+  <i>observed: </i>tinyList1.txt contained <span class='observed'>0</span> books. tinyList2.txt contained 0 books. Their merge contains 0"
+"tiny2",0,1,"Output line 0:
+  <i>expected: </i>tinyList2.txt contained <span class='expected'>3</span> books. tinyList1.txt contained 3 books. Their merge contains 5 
+  <i>observed: </i>tinyList2.txt contained <span class='observed'>0</span> books. tinyList1.txt contained 0 books. Their merge contains 0"
+"tiny2-mem",0,1,"Output line 0:
+  <i>expected: </i>tinyList2.txt contained <span class='expected'>3</span> books. tinyList1.txt contained 3 books. Their merge contains 5 
+  <i>observed: </i>tinyList2.txt contained <span class='observed'>0</span> books. tinyList1.txt contained 0 books. Their merge contains 0"
+"unittests",25,5,"1..8
+testReadingList.cpp:52: error: Failed test
+# testReadingList.cpp:52: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 1 - testRLAddDiscrete
+testReadingList.cpp:91: error: Failed test
+# testReadingList.cpp:91: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 2 - testRLAddDuplicates
+testReadingList.cpp:156: error: Failed test
+# testReadingList.cpp:156: 	rl2.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 3 - testRLAssign
+ok 4 - testRLConstructor
+testReadingList.cpp:189: error: Failed test
+# testReadingList.cpp:189: 	rl2.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 5 - testRLCopy
+ok 6 - testRLDefaultConstructor
+testReadingList.cpp:219: error: Failed test
+# testReadingList.cpp:219: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 7 - testRLInput
+testReadingList.cpp:121: error: Failed test
+# testReadingList.cpp:121: 	rl.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 8 - testRLRemove
+# UnitTest: passed 2 out of 8 tests, for a success rate of 25.0%"
+"unittests-mem",0,5,"Output line 0:
+  <i>expected: </i>1..9 <span class='expected'>ok</span> 1 - testRLAddDiscrete ok 2 - testRLAddDuplicates ok 3 - testRLA
+  <i>observed: </i>1..9 <span class='observed'>testReadingList</span>.cpp:52: error: Failed test # testReadingList.cpp:52: rl.size()"

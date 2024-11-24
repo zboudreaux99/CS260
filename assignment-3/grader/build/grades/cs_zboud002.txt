@@ -1,0 +1,163 @@
+Grade report for build: cs_zboud002
+
+Submitted: 2021-01-01 00:00:00
+Due: 05/23/2023
+Total: 8
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+builder
+score=100	weight=1	multiplier=false
+make[1]: Entering directory '/home/cs_zboud002/CS260/assignment-3'
+cat book.d counted.d mergeLists.d readingList.d sanityCheck.d testReadingList.d unittest.d > make.dep
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/cs_zboud002/CS260/assignment-3'
+
+--- end of output ---
+--- std error ---
+
+--------
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+empty1
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: emptyList.txt contained 0 books. mediumList2.txt contained 1000 books. Their merge contains 1000 books. etext10026 Various The 
+  observed: emptyList.txt contained 0 books. mediumList2.txt contained 0 books. Their merge contains 0 books. --- end of output ---
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+empty1-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: empty.txt contained 0 books. mediumList2.txt contained 1000 books. Their merge contains 1000 books. etext10026 Various The 
+  observed: empty.txt contained 0 books. mediumList2.txt contained 0 books. Their merge contains 0 books. --- end of output --- ---
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+empty2
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList1.txt contained 1000 books. emptyList.txt contained 0 books. Their merge contains 10
+  observed: mediumList1.txt contained 0 books. emptyList.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+empty2-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList1.txt contained 1000 books. emptyList.txt contained 0 books. Their merge contains 10
+  observed: mediumList1.txt contained 0 books. emptyList.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+medium1
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList1.txt contained 1000 books. mediumList2.txt contained 1000 books. Their merge contai
+  observed: mediumList1.txt contained 0 books. mediumList2.txt contained 0 books. Their merge contains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+medium1-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList1.txt contained 1000 books. mediumList2.txt contained 1000 books. Their merge contai
+  observed: mediumList1.txt contained 0 books. mediumList2.txt contained 0 books. Their merge contains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+medium2
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList3.txt contained 1000 books. mediumList1.txt contained 1000 books. Their merge contai
+  observed: mediumList3.txt contained 0 books. mediumList1.txt contained 0 books. Their merge contains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+medium2-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList3.txt contained 1000 books. mediumList1.txt contained 1000 books. Their merge contai
+  observed: mediumList3.txt contained 0 books. mediumList1.txt contained 0 books. Their merge contains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+noNewEntries
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList3.txt contained 1000 books. mediumList2.txt contained 1000 books. Their merge contai
+  observed: mediumList3.txt contained 0 books. mediumList2.txt contained 0 books. Their merge contains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+noNewEntries-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: mediumList3.txt contained 1000 books. mediumList2.txt contained 1000 books. Their merge contai
+  observed: mediumList3.txt contained 0 books. mediumList2.txt contained 0 books. Their merge contains
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+short1
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: shortList1.txt contained 190 books. shortList2.txt contained 190 books. Their merge contains
+  observed: shortList1.txt contained 0 books. shortList2.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+short1-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: shortList1.txt contained 190 books. shortList2.txt contained 190 books. Their merge contains
+  observed: shortList1.txt contained 0 books. shortList2.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+tiny1
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: tinyList1.txt contained 3 books. tinyList2.txt contained 3 books. Their merge contains 5 
+  observed: tinyList1.txt contained 0 books. tinyList2.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+tiny1-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: tinyList1.txt contained 3 books. tinyList2.txt contained 3 books. Their merge contains 5 
+  observed: tinyList1.txt contained 0 books. tinyList2.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+tiny2
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: tinyList2.txt contained 3 books. tinyList1.txt contained 3 books. Their merge contains 5 
+  observed: tinyList2.txt contained 0 books. tinyList1.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+tiny2-mem
+score=0	weight=1	multiplier=false
+Output line 0:
+  expected: tinyList2.txt contained 3 books. tinyList1.txt contained 3 books. Their merge contains 5 
+  observed: tinyList2.txt contained 0 books. tinyList1.txt contained 0 books. Their merge contains 0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+unittests
+score=25	weight=5	multiplier=false
+1..8
+testReadingList.cpp:52: error: Failed test
+# testReadingList.cpp:52: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 1 - testRLAddDiscrete
+testReadingList.cpp:91: error: Failed test
+# testReadingList.cpp:91: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 2 - testRLAddDuplicates
+testReadingList.cpp:156: error: Failed test
+# testReadingList.cpp:156: 	rl2.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 3 - testRLAssign
+ok 4 - testRLConstructor
+testReadingList.cpp:189: error: Failed test
+# testReadingList.cpp:189: 	rl2.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 5 - testRLCopy
+ok 6 - testRLDefaultConstructor
+testReadingList.cpp:219: error: Failed test
+# testReadingList.cpp:219: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 7 - testRLInput
+testReadingList.cpp:121: error: Failed test
+# testReadingList.cpp:121: 	rl.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 8 - testRLRemove
+# UnitTest: passed 2 out of 8 tests, for a success rate of 25.0%
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+unittests-mem
+score=0	weight=5	multiplier=false
+Output line 0:
+  expected: 1..9 ok 1 - testRLAddDiscrete ok 2 - testRLAddDuplicates ok 3 - testRLA
+  observed: 1..9 testReadingList.cpp:52: error: Failed test # testReadingList.cpp:52: rl.size()

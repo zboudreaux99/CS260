@@ -1,0 +1,3 @@
+Output line 0:
+  <i>expected: </i>shortList1.txt contained <span class='expected'>190</span> books. shortList2.txt contained 190 books. Their merge contains
+  <i>observed: </i>shortList1.txt contained <span class='observed'>0</span> books. shortList2.txt contained 0 books. Their merge contains 0

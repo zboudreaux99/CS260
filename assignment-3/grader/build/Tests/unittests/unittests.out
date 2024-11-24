@@ -1,0 +1,40 @@
+1..8
+testReadingList.cpp:52: error: Failed test
+# testReadingList.cpp:52: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 1 - testRLAddDiscrete
+testReadingList.cpp:91: error: Failed test
+# testReadingList.cpp:91: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 2 - testRLAddDuplicates
+testReadingList.cpp:156: error: Failed test
+# testReadingList.cpp:156: 	rl2.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 3 - testRLAssign
+ok 4 - testRLConstructor
+testReadingList.cpp:189: error: Failed test
+# testReadingList.cpp:189: 	rl2.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 5 - testRLCopy
+ok 6 - testRLDefaultConstructor
+testReadingList.cpp:219: error: Failed test
+# testReadingList.cpp:219: 	rl.size() isEqualTo(3)
+# 	Expected: 3
+# 	Observed: 0
+# : 
+not ok 7 - testRLInput
+testReadingList.cpp:121: error: Failed test
+# testReadingList.cpp:121: 	rl.size() isEqualTo(2)
+# 	Expected: 2
+# 	Observed: 0
+# : 
+not ok 8 - testRLRemove
+# UnitTest: passed 2 out of 8 tests, for a success rate of 25.0%

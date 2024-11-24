@@ -1,0 +1,3 @@
+Output line 0:
+  <i>expected: </i>mediumList3.txt contained <span class='expected'>1000</span> books. mediumList2.txt contained 1000 books. Their merge contai
+  <i>observed: </i>mediumList3.txt contained <span class='observed'>0</span> books. mediumList2.txt contained 0 books. Their merge contains 
